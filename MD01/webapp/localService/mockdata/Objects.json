@@ -142,20 +142,4 @@
 			"uri": "Objects('ObjectID 9')/LineItems"
 		}
 	}
-}, {
-	"ObjectID": "ObjectID 10",
-	"Name": "Name 10",
-	"Attribute1": "Attribute1 10",
-	"Attribute2": "Attribute2 10",
-	"UnitOfMeasure": "UnitOfMeasure 10",
-	"UnitNumber": 6050.51,
-	"__metadata": {
-		"uri": "Objects('ObjectID 10')",
-		"type": "Master_Detail.Object"
-	},
-	"LineItems": {
-		"__deferred": {
-			"uri": "Objects('ObjectID 10')/LineItems"
-		}
-	}
 }]

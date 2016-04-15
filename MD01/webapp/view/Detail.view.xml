@@ -12,12 +12,12 @@
 					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://attachment" tooltip="{i18n>detailIconTabBarAttachments}" design="Horizontal" text="Attachment" count="12" iconDensityAware="false" showAll="false">
 					</IconTabFilter>
 					<IconTabSeparator id="__separator0"/>
-					<IconTabFilter text="Open 3" icon="sap-icon://task" iconColor="Critical" id="__filter0" design="Horizontal">
+					<IconTabFilter text="Open 3" icon="sap-icon://wounds-doc" iconColor="Critical" id="__filter0" design="Horizontal">
 					    <content>
 					        <Button text="Open Panel 3" width="150px" id="btn_NavigateToPanel3" press="GoToPage3" icon="sap-icon://action" iconFirst="false"/>
 					    </content>
 					</IconTabFilter>
-					<IconTabFilter xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" text="Open 4" icon="sap-icon://task" iconColor="Critical" id="__filter0_copy" design="Horizontal">
+					<IconTabFilter xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" text="Open 4" icon="sap-icon://stethoscope" iconColor="Critical" id="__filter0_copy" design="Horizontal">
 					    <content>
 					        <Button text="Open Panel 4" width="150px" id="btn_NavigateToPanel4" press="GoToPage4" icon="sap-icon://action" iconFirst="false"/>
 					        
@@ -29,10 +29,10 @@
 					<IconTabFilter count="{detailView>/lineItemListTitle} found" iconColor="Neutral" id="__filter2" design="Horizontal" iconDensityAware="false" showAll="true"/>
 				</items>
 			</IconTabBar>
-			<Table id="lineItemsList" width="auto" items="{LineItems}" updateFinished="onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}" busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin">
+			<Table id="lineItemsList" width="auto" items="{LineItems}" updateFinished="onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}" busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin" includeItemInSelection="true" mode="MultiSelect">
 				<headerToolbar>
 					<Toolbar id="lineItemsToolbar">
-						<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}" titleStyle="H2"/>
+						<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}" titleStyle="H2" textAlign="Center"/>
 					</Toolbar>
 				</headerToolbar>
 				<columns>
@@ -40,14 +40,35 @@
 						<Text text="{i18n>detailLineItemTableIDColumn}"/>
 					</Column>
 					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
-						<Text text="{i18n>detailLineItemTableUnitNumberColumn}"/>
+						<Text text="{i18n>detailLineItemProductTypeNameColumn}"/>
+					</Column>
+					<Column xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" minScreenWidth="Tablet" demandPopin="true" hAlign="Right" id="__column2">
+					    <Text text="{i18n>detailLineItemTableUnitNumberColumn}"/>
+					    
 					</Column>
 				</columns>
 				<items>
-					<ColumnListItem>
+					<ColumnListItem unread="false">
 						<cells>
-							<ObjectIdentifier title="Title of {LineItemID}" text="Name of {LineItemID}" badgeNotes="true" badgePeople="true" badgeAttachments="true"/>
-							<ObjectNumber number="{          path: 'UnitNumber',          formatter: '.formatter.currencyValue'         }" unit="{UnitOfMeasure}"/>
+							<sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" id="__layout0" allowWrapping="true">
+							    <sap.ui.layout:content>
+							        <ObjectIdentifier xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" title="Title of {LineItemID}" text="Name of {LineItemID}" badgeNotes="true" badgeAttachments="true" id="__identifier2" badgePeople="false"/>
+							    </sap.ui.layout:content>
+							</sap.ui.layout:HorizontalLayout>
+							<sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" id="__layout0_copy" allowWrapping="true">
+							    <sap.ui.layout:content>
+							        <ObjectIdentifier xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" title="Title of {Attribute}" text="{Attribute}" id="__identifier2_copy" badgePeople="false" badgeAttachments="false" badgeNotes="false"/>
+							        
+							    </sap.ui.layout:content>
+							    
+							</sap.ui.layout:HorizontalLayout>
+							<sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" id="__layout0_copy2" allowWrapping="false">
+							    <sap.ui.layout:content>
+							        <ObjectNumber xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" number="{          path: 'UnitNumber',          formatter: '.formatter.currencyValue'         }" unit="{UnitOfMeasure}" id="__number1_copy2" textAlign="Right"/>
+							        
+							    </sap.ui.layout:content>
+							    
+							</sap.ui.layout:HorizontalLayout>
 						</cells>
 					</ColumnListItem>
 				</items>
