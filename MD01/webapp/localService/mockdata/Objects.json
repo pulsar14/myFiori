@@ -1,0 +1,161 @@
+[{
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 1",
+	"Attribute1": "Attribute1 1",
+	"Attribute2": "Attribute2 1",
+	"UnitOfMeasure": "UnitOfMeasure 1",
+	"UnitNumber": 6408.51,
+	"__metadata": {
+		"uri": "Objects('ObjectID 1')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 1')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 2",
+	"Name": "Name 2",
+	"Attribute1": "Attribute1 2",
+	"Attribute2": "Attribute2 2",
+	"UnitOfMeasure": "UnitOfMeasure 2",
+	"UnitNumber": 9812.89,
+	"__metadata": {
+		"uri": "Objects('ObjectID 2')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 2')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 3",
+	"Name": "Name 3",
+	"Attribute1": "Attribute1 3",
+	"Attribute2": "Attribute2 3",
+	"UnitOfMeasure": "UnitOfMeasure 3",
+	"UnitNumber": 5127.88,
+	"__metadata": {
+		"uri": "Objects('ObjectID 3')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 3')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 4",
+	"Name": "Name 4",
+	"Attribute1": "Attribute1 4",
+	"Attribute2": "Attribute2 4",
+	"UnitOfMeasure": "UnitOfMeasure 4",
+	"UnitNumber": 1243.61,
+	"__metadata": {
+		"uri": "Objects('ObjectID 4')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 4')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 5",
+	"Name": "Name 5",
+	"Attribute1": "Attribute1 5",
+	"Attribute2": "Attribute2 5",
+	"UnitOfMeasure": "UnitOfMeasure 5",
+	"UnitNumber": 4892.09,
+	"__metadata": {
+		"uri": "Objects('ObjectID 5')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 5')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 6",
+	"Name": "Name 6",
+	"Attribute1": "Attribute1 6",
+	"Attribute2": "Attribute2 6",
+	"UnitOfMeasure": "UnitOfMeasure 6",
+	"UnitNumber": 8189.77,
+	"__metadata": {
+		"uri": "Objects('ObjectID 6')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 6')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 7",
+	"Name": "Name 7",
+	"Attribute1": "Attribute1 7",
+	"Attribute2": "Attribute2 7",
+	"UnitOfMeasure": "UnitOfMeasure 7",
+	"UnitNumber": 6193.09,
+	"__metadata": {
+		"uri": "Objects('ObjectID 7')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 7')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 8",
+	"Name": "Name 8",
+	"Attribute1": "Attribute1 8",
+	"Attribute2": "Attribute2 8",
+	"UnitOfMeasure": "UnitOfMeasure 8",
+	"UnitNumber": 1326.25,
+	"__metadata": {
+		"uri": "Objects('ObjectID 8')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 8')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 9",
+	"Name": "Name 9",
+	"Attribute1": "Attribute1 9",
+	"Attribute2": "Attribute2 9",
+	"UnitOfMeasure": "UnitOfMeasure 9",
+	"UnitNumber": 1219.8,
+	"__metadata": {
+		"uri": "Objects('ObjectID 9')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 9')/LineItems"
+		}
+	}
+}, {
+	"ObjectID": "ObjectID 10",
+	"Name": "Name 10",
+	"Attribute1": "Attribute1 10",
+	"Attribute2": "Attribute2 10",
+	"UnitOfMeasure": "UnitOfMeasure 10",
+	"UnitNumber": 6050.51,
+	"__metadata": {
+		"uri": "Objects('ObjectID 10')",
+		"type": "Master_Detail.Object"
+	},
+	"LineItems": {
+		"__deferred": {
+			"uri": "Objects('ObjectID 10')/LineItems"
+		}
+	}
+}]

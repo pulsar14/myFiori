@@ -1,0 +1,63 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" controllerName="MD_Namespace.controller.Detail">
+
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+
+		<semantic:content>
+			<ObjectHeader id="objectHeader" title="{ObjectID}" number="{path: 'UnitNumber', formatter: '.formatter.currencyValue'}" numberUnit="{UnitOfMeasure}" intro="This is an Intro of Detail View Panel" backgroundDesign="Solid" condensed="true" fullScreenOptimized="true" icon="sap-icon://business-by-design" responsive="true" introActive="false" numberState="Success" showTitleSelector="true">
+			</ObjectHeader>
+			<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding" applyContentPadding="true" backgroundDesign="Translucent" expanded="false" stretchContentHeight="false">
+				<items>
+					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}" design="Horizontal" text="Details">
+					</IconTabFilter>
+					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://attachment" tooltip="{i18n>detailIconTabBarAttachments}" design="Horizontal" text="Attachment" count="12" iconDensityAware="false" showAll="false">
+					</IconTabFilter>
+					<IconTabSeparator id="__separator0"/>
+					<IconTabFilter text="Open 3" icon="sap-icon://task" iconColor="Critical" id="__filter0" design="Horizontal">
+					    <content>
+					        <Button text="Open Panel 3" width="150px" id="btn_NavigateToPanel3" press="GoToPage3" icon="sap-icon://action" iconFirst="false"/>
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" text="Open 4" icon="sap-icon://task" iconColor="Critical" id="__filter0_copy" design="Horizontal">
+					    <content>
+					        <Button text="Open Panel 4" width="150px" id="btn_NavigateToPanel4" press="GoToPage4" icon="sap-icon://action" iconFirst="false"/>
+					        
+					    </content>
+					    
+					</IconTabFilter>
+					<IconTabSeparator xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" id="__separator3" iconDensityAware="false"/>
+					<IconTabSeparator xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" id="__separator0_copy" icon="sap-icon://arrow-right"/>
+					<IconTabFilter count="{detailView>/lineItemListTitle} found" iconColor="Neutral" id="__filter2" design="Horizontal" iconDensityAware="false" showAll="true"/>
+				</items>
+			</IconTabBar>
+			<Table id="lineItemsList" width="auto" items="{LineItems}" updateFinished="onListUpdateFinished" noDataText="{i18n>detailLineItemTableNoDataText}" busyIndicatorDelay="{detailView>/lineItemTableDelay}" class="sapUiResponsiveMargin">
+				<headerToolbar>
+					<Toolbar id="lineItemsToolbar">
+						<Title id="lineItemsHeader" text="{detailView>/lineItemListTitle}" titleStyle="H2"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="{i18n>detailLineItemTableIDColumn}"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+						<Text text="{i18n>detailLineItemTableUnitNumberColumn}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="Title of {LineItemID}" text="Name of {LineItemID}" badgeNotes="true" badgePeople="true" badgeAttachments="true"/>
+							<ObjectNumber number="{          path: 'UnitNumber',          formatter: '.formatter.currencyValue'         }" unit="{UnitOfMeasure}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
+		</semantic:sendEmailAction>
+
+	</semantic:DetailPage>
+
+</mvc:View>

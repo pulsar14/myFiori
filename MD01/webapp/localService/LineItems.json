@@ -1,0 +1,171 @@
+[{
+	"LineItemID": "LineItemID 1",
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 1",
+	"Attribute": "Attribute 1",
+	"UnitOfMeasure": "UnitOfMeasure 1",
+	"UnitNumber": 7781.33,
+	"PRN": true,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 1')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 1')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 2",
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 2",
+	"Attribute": "Attribute 2",
+	"UnitOfMeasure": "UnitOfMeasure 2",
+	"UnitNumber": 5712.33,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 2')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 2')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 3",
+	"ObjectID": "ObjectID 3",
+	"Name": "Name 3",
+	"Attribute": "Attribute 3",
+	"UnitOfMeasure": "UnitOfMeasure 3",
+	"UnitNumber": 9764.78,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 3')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 3')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 4",
+	"ObjectID": "ObjectID 4",
+	"Name": "Name 4",
+	"Attribute": "Attribute 4",
+	"UnitOfMeasure": "UnitOfMeasure 4",
+	"UnitNumber": 1084.67,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 4')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 4')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 5",
+	"ObjectID": "ObjectID 4",
+	"Name": "Name 5",
+	"Attribute": "Attribute 5",
+	"UnitOfMeasure": "UnitOfMeasure 5",
+	"UnitNumber": 2527.16,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 5')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 5')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 6",
+	"ObjectID": "ObjectID 4",
+	"Name": "Name 6",
+	"Attribute": "Attribute 6",
+	"UnitOfMeasure": "UnitOfMeasure 6",
+	"UnitNumber": 1658.64,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 6')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 6')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 7",
+	"ObjectID": "ObjectID 4",
+	"Name": "Name 7",
+	"Attribute": "Attribute 7",
+	"UnitOfMeasure": "UnitOfMeasure 7",
+	"UnitNumber": 2160.13,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 7')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 7')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 8",
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 8",
+	"Attribute": "Attribute 8",
+	"UnitOfMeasure": "UnitOfMeasure 8",
+	"UnitNumber": 6817.82,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 8')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 8')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 9",
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 9",
+	"Attribute": "Attribute 9",
+	"UnitOfMeasure": "UnitOfMeasure 9",
+	"UnitNumber": 9816.07,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 9')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 9')/Objects"
+		}
+	}
+}, {
+	"LineItemID": "LineItemID 10",
+	"ObjectID": "ABCDEFGHILMNOPQ",
+	"Name": "Name 10",
+	"Attribute": "Attribute 10",
+	"UnitOfMeasure": "UnitOfMeasure 10",
+	"UnitNumber": 1724.39,
+	"PRN": false,
+	"__metadata": {
+		"uri": "LineItems('LineItemID 10')",
+		"type": "Master_Detail.LineItem"
+	},
+	"Objects": {
+		"__deferred": {
+			"uri": "LineItems('LineItemID 10')/Objects"
+		}
+	}
+}]
